@@ -1,0 +1,21 @@
+<table>
+  <caption>
+    {{
+      headline
+    }}
+  </caption>
+  <thead>
+    <th *ngFor="let name of dayNames">{{ name }}</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let week of calendar">
+      <td
+        *ngFor="let day of week"
+        [class]="day | today: todayDate"
+        (click)="tip(day)"
+      >
+        {{ day }}
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,1 +1,126 @@
 /* You can add global styles to this file, and also import other style files */
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+html {
+  background: transparent !important;
+  --blue: #306f91;
+  --green: #8db243;
+  --red: #c32e04;
+  --yellow: #dfac20;
+  --lightblue: #e6f2f7;
+  --lightgreen: #ebf5d7;
+  --lightred: #ffebe6;
+  --lightyellow: #fdfcf3;
+}
+
+body {
+  margin: 1em auto;
+  max-width: 60em;
+  font-family: sans-serif;
+  color: #333333;
+}
+
+h1,
+main,
+main > svg,
+body > svg {
+  border-radius: 0 0.5rem 0.5rem;
+  border: 1px solid;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+main > svg {
+  width: calc(100% - 2rem);
+  background: white;
+  padding: 0;
+}
+
+body > svg {
+  border: 1px dashed var(--blue);
+  padding: 0;
+}
+
+h1 {
+  background: #f1f3f4
+    url("//wiki.selfhtml.org/images/a/ad/Selfhtml-beispiel_150.svg") 10px 5px
+    no-repeat;
+  border-color: #d5d5d5;
+  font-size: 100%;
+  padding-top: 60px;
+}
+
+main {
+  display: block; /* für IE */
+  background: #f1f3f4;
+  border-color: #d5d5d5;
+  min-height: 25em;
+}
+
+#hinweis {
+  /* für Container */
+  padding: 1em;
+  margin: 2em auto;
+  min-width: 20em;
+  height: auto;
+  background-color: #f1f3f4;
+  border-left: 5px solid #c32e04;
+}
+
+.hinweis {
+  /* für Textzeile */
+  color: #c32e04;
+  font-style: italic;
+  border-bottom: 1px dotted;
+  display: inline-block;
+}
+
+@media (min-width: 320px) {
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 400px) {
+  h1 {
+    font-size: 100%;
+    padding-left: 200px;
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 110%;
+    padding-left: 200px;
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 560px) {
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 140%;
+  }
+}
+
+@media (min-width: 720px) {
+  h1 {
+    font-size: 200%;
+  }
+}
